@@ -1,0 +1,210 @@
+:root {
+    --color-text-dark: #000;
+    --color-text-light: #fff;
+
+    --color-bg-feed: #3C3F52;
+    --color-bg-lsquare: #282B34;
+
+    --font-thin: 'Montserrat Thin';
+    --font-standar: 'Montserrat Light';
+    --font-substandar: 'Montserrat Medium';
+    --font-title: 'Montserrat Black';
+    --font-ig-one: 'Lobster Two';
+    --font-ig-two: 'Grand Hotel';
+    --font-ig-three: 'Pattaya';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: var(--font-standar);
+    color: var(--color-text-light);
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(100, 1fr);
+    grid-template-rows: repeat(100, 1fr);
+}
+
+/* --- --- --- FIRST SECITON --- --- --- */
+
+.first_section {
+    grid-column: 1/22;
+    grid-row: 1/-1;
+    background: var(--color-bg-lsquare);
+}
+
+.sub_first_section {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(30, 1fr);
+    grid-template-rows: repeat(70, 1fr);
+}
+
+/* --- LOGO --- */
+
+.logo {
+    grid-column: 1/25;
+    grid-row: 1/7;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 15px;
+    padding: 0 0 5px 15px;
+    /* border: 1px solid #fff; */
+}
+
+.icon_ig {
+    font-size: 2rem;
+    font-weight: 300;
+    background: linear-gradient(200deg, #405DE6, #833AB4, #C13584,  #E1306C, #F56040, #FCAF45, #FFDC80);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.logo_text {
+    font-family: var(--font-ig-one);
+    font-size: 1.6rem;
+}
+
+/* --- PROFILE --- */
+
+.container {
+    grid-column: 1/28;
+    grid-row: 7/25;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    /* border: 1px solid #fff; */
+}
+
+.profile__wrapper {
+    width: 170px;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.name_profile {
+    font-size: 1.2rem;
+}
+
+.name_user {
+    color: #fff5;
+    font-size: .9rem;
+    font-family: var(--font-substandar);
+}
+
+.profile_img_wrapper {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    /* border: 3px solid #11161E; */
+    border-radius: 50px;
+    margin-bottom: 15px;
+}
+
+.profile_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+    border: 5px solid var(--color-bg-lsquare);
+}
+
+.profile_img_wrapper {
+    background: rgb(255, 201, 0);
+    background: linear-gradient(220deg, rgba(255, 201, 0) 13%, rgb(255, 0,95) 73%, rgb(255, 9, 237) 100%);
+    padding: 3px;
+    /* box-sizing: border-box; */
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+/* --- DATA PROFILE --- */
+
+.data_profile {
+    grid-column: 1/28;
+    grid-row: 27/34;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    /* border: 1px solid #Fff; */
+}
+
+.posts {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* border-right: 1px solid #Fff7; */
+}
+
+.followers {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.following {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* border-left: 1px solid #Fff7; */
+}
+
+.cuarenta_seis, .dos_ocho, .cinco_dos_seis {
+    font-family: var(--font-substandar);
+    font-size: .9rem;
+    color: #ffffffc7;
+}
+
+.p_posts, .p_followers, .p_following {
+    font-family: var(--font-substandar);
+    font-size: .8rem;
+    color: #fff5;
+}
+
+.border-right, .border-left {
+    width: 1px;
+    height: 80%;
+    background: #fff4;
+}
+
+/* --- --- --- SECOND SECTION --- --- --- */
+
+.second_section {
+    grid-column: 20/-1;
+    grid-row: 1/-1;
+    border-radius: 15px 0 0 15px;
+    background: var(--color-bg-feed);
+}
