@@ -354,6 +354,22 @@ body {
     grid-template-rows: repeat(70, 1fr);
 }
 
+.bar_select {
+    grid-column: 19/20;
+    grid-row: 50/54;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* border: 1px solid #fff; */
+}
+
+.select {
+    width: 3px;
+    height: 90%;
+    border: 50px;
+    background: linear-gradient(180deg, #405DE6, #833AB4, #C13584, #E1306C, #F56040, #FCAF45, #FFDC80);
+}
+
 .header {
     grid-column: 1/-1;
     grid-row: 1/10;
