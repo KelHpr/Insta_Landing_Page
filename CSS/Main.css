@@ -691,3 +691,86 @@ body {
     background-size: cover;
     background-position: center;
 }
+
+.footer_img_st,
+.footer_img_nd,
+.footer_img_rd {
+    grid-column: 6/30;
+    grid-row: 58/61;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid #fff; */
+}
+
+.footer_img_nd {
+    grid-column: 34/61;
+    grid-row: 49/52;
+}
+
+.footer_img_rd {
+    grid-column: 65/94;
+    grid-row: 64/67;
+}
+
+.data_user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /* border: 1px solid #fff; */
+}
+
+.img_bg_1,
+.img_bg_2,
+.img_bg_3 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+}
+
+.img_bg_1 {
+    background: url(../IMGS/person_one.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img_bg_2 {
+    background: url(../IMGS/person_one.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img_bg_3 {
+    background: url(../IMGS/person_six.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.name_img_bg {
+    font-family: var(--font-substandar);
+    color: var(--color-text-light);
+    font-size: .8rem;
+}
+
+.icons_post {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    /* border: 1px solid #fff; */
+}
+
+.st_icon, .nd_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 1rem;
+    /* border: 1px solid #fff; */
+}
+
+.likes_number, .comments_number {
+    font-family: var(--font-substandar);
+    font-size: .8rem;
+}
